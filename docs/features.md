@@ -21,9 +21,10 @@ __Player__
 * Grid based movement and rotation
 * Weapon selection
 * _Experience Component_: Defines player experience and level
-* _Interaction Component_: allows the player to interaction with terminals, NPCs, doors etcetera
+* _Interaction Component_: Allows the player to interaction with terminals, NPCs, doors etcetera
 * _Inventory Component_: Handles the player items and weapons. Defines types, amounts and max amounts
 * _Item Component_: Allows the player to use items
+* _Vision Component_: Defines the player's current vision (what is in front of the player).
 
 __Weapon system__
 
