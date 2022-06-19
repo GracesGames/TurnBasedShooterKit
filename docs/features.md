@@ -14,21 +14,22 @@ __Shared components__
 
 * _Dialog Component_: Allows any actor (e.g. terminals, NPCs) to have dialog lines
 * _Stats Component_: Define stats and their influence on damage dealt and taken, for example: accuracy, defense and agility
-* _Health Component_: Defines the actor's health and armor stats. Handles health regeneration and death state.
+* _Health Component_: Defines the actor's health and armor stats. Handles health regeneration and death state
 
 __Player__
 
 * Grid based movement and rotation
-* Weapon selection
+* Weapon selection and fire requests
+* Object interaction
 * _Experience Component_: Defines player experience and level
 * _Interaction Component_: Allows the player to interaction with terminals, NPCs, doors etcetera
 * _Inventory Component_: Handles the player items and weapons. Defines types, amounts and max amounts
 * _Item Component_: Allows the player to use items
-* _Vision Component_: Defines the player's current vision (what is in front of the player).
+* _Vision Component_: Defines the player's current vision (what is in front of the player)
 
 __Weapon system__
 
-* Each weapon is easy to set up using the customization options: burst size, weapon range, damage and damage radius, fire delays, accuracy and more.
+* Each weapon is easy to set up using the customization options: burst size, weapon range, damage and damage radius, fire delays, accuracy and more
 * _AmmoComponent_: Handles the ammo for the weapon. Defines the ammo per shot, ammo type and whether it weapon has unlimited ammo
 
 __Enemies__
@@ -57,8 +58,8 @@ __Character select__
 __Save load system__
 
 * Save and load any time during the game
-* Keeps track of player, enemy and object status using component data.
-* Easily extendible.
+* Keeps track of player, enemy and object status using component data
+* Easily extendible
 * Saves the data per level
 
 __HUD__
