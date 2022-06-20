@@ -16,7 +16,7 @@ Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub is
 * Mobile support
 * Minimap
 * Fantasy visuals
-* 3D level
+* 3D model example
 
 [mail]: mailto:gracesgamesbv@gmail.com
 [discord]: https://discord.gg/DBwFAES
