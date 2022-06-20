@@ -18,7 +18,7 @@ Project will be maintained, so feel free to get in touch to suggest changes, fea
 
 - Different types of enemies, pickups and weapons
 - Easy to create and modify enemies using templates and components
-- Systems for health, ammo, stats, inventory and save/load functionality
+- Systems for health, ammo, stats, inventory, leveling, save/load functionality
 - Extendible level objects that use interaction like locked doors, secret passages and terminals
 - And much more.
 
