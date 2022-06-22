@@ -8,7 +8,8 @@ layout: default
 <br/>
 Available in the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/turn-based-shooter-kit)
 
-The Turn Based Shooter Kit is an easy to use template for creating first person turn based shooter type of games!
+The Turn Based Shooter Kit is an easy to use template for creating first-person turn-based shooter type of games!
+While the kit uses sprite visuals and a shooter setting, the logic can easily be applied to 3D models and a fantasy setting.
 
 Supports PC.  
 Tested on Windows and Mac OS.  
