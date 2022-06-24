@@ -47,7 +47,7 @@ __Items__
 
 __Objects__
 
-* Interactive objects such as sliding doors, terminals, exits to other levels
+* Interactive objects such as sliding doors, terminals, and exits to other levels
 * Exploding barrels and level decoration
 
 __Character select__
