@@ -12,17 +12,17 @@ The Turn Based Shooter Kit provides:
 
 __Shared components__
 
-* _Dialog Component_: Allows any actor (e.g. terminals, NPCs) to have dialog lines
+* _Dialogue Component_: Allows any actor (e.g. terminals, NPCs) to have dialogue lines
 * _Stats Component_: Define stats and their influence on damage dealt and taken, for example: accuracy, defense and agility
 * _Health Component_: Defines the actor's health and armor stats. Handles health regeneration and death state
 
 __Player__
 
-* Grid based movement and rotation
+* Grid-based movement and rotation
 * Weapon selection and fire requests
 * Object interaction
 * _Experience Component_: Defines player experience and level
-* _Interaction Component_: Allows the player to interaction with terminals, NPCs, doors etcetera
+* _Interaction Component_: Allows the player to interact with terminals, NPCs, doors etcetera
 * _Inventory Component_: Handles the player items and weapons. Defines types, amounts and max amounts
 * _Item Component_: Allows the player to use items
 * _Vision Component_: Defines the player's current vision (what is in front of the player)
@@ -34,7 +34,7 @@ __Weapon system__
 
 __Enemies__
 
-* Easily define more enemy by inheriting from the BaseEnemy class and overriding the component values
+* Easily define more enemies by inheriting from the BaseEnemy class and overriding the component values
 * _EnemyActivationComponent_: Handles the activation state and defines the activation radius
 * _EnemyAttackComponent_: Defines the enemy attack using stats like attack range, attacks per turn, damage and damage radius
 * _EnemyMoveComponent_: Defines the enemy moves using stats like move time and moves per turn
