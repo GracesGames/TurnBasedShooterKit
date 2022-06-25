@@ -12,7 +12,7 @@ permalink: /documentation/
 
 __Dialog Component__
 
-BP_DialogComponent handles the logic for dialog interaction e.g. with a terminal.  
+BP_DialogComponent handles the logic for dialogue interaction e.g. with a terminal.
 It specifies all possible texts to display and which one to show currently. 
     
 __Face Player Component__
@@ -24,12 +24,32 @@ __Health Component__
 
 BP_HealthComponent handles taking damage, updates health and armor values and a dead state.
 It allows for damage modifications based on the actor StatsComponent. 
-While it also supports health regeneration, this functionality might not be applicable for a turn based game.
+While it also supports health regeneration, this functionality might not be applicable for a turn-based game.
 
 __Stats Component__
 
 BP_StatsComponent is used to define the stats of an actor.
-These stats currently support modifying damage dealt and received amounts but can easily be extended for other gameplay purposes.
+These stats currently support modifying damage dealt and received amounts, but can easily be extended for other gameplay purposes.
+
+__Damage Interface__
+
+I_Damage defines an abstract way to modify outgoing and incoming damage.
+
+__Dialog Interface__
+
+I_Dialog defines an abstract way to show and clear dialog text.
+
+__HealthActor Interface__
+
+I_HealthActor defines an abstract way to let an actor know it died.
+
+__NamedActor Interface__
+
+I_NamedActor defines an abstract way to get the actor its name.
+
+__RemovableActor Interface__
+
+I_RemovableActor defines an abstract way to get the actor GUID and destroy it based on save data.
 
 ### Enemies
 
@@ -57,21 +77,22 @@ I_Enemy defines the interface for the Enemy that is used by the save/load system
 
 ### Game
 
+__Turn Based Shooter Game Instance__
+
+BP_TurnBasedShooterGameInstance is the game instance and handles log entries like '+1 Key' or 'Found Shotgun' and save and load game logic.  
+It also manages the character archetype selection options. 
+
+__Turn Based Shooter Game Mode__
+
+BP_TurnBasedShooterGameMode is the game mode and manages the turns system.
+
 __Main Menu Game Mode__
 
 BP_MainMenuGameMode is the game mode and specifies the BP_MainMenuPlayerController as default controller. It is used as the game mode in the Main Menu map.
 
-__Turn Based Shooter Game Instance__
-
-BP_TurnBasedShooterGameInstance is the game instance and handles log entries and save and load game logic. It also manages the character archetype selection options. 
-
-__Turn Based Shooter Game Mode__
-
-BP_TurnBasedShooterGameMode is the game mode and handles the current turn.
-
 __Save Game__
 
-BP_GameSaveData, BP_LevelSaveData and any other SaveGame files act as a container for the save data (e.g. current level, health for the HealthComponent).
+BP_GameSaveData, BP_LevelSaveData and any other SaveGame files act as containers for the save data (e.g. current level, health for the HealthComponent).
 
 __Log Interface__
 
@@ -93,11 +114,11 @@ BP_ArmorItem is an item that adds an armor pack to the player inventory.
 
 __Health Item__
 
-BP_HealthItem is an item that adds a certain amount of health to the player when damaged. Else it will add an Health pack to the player inventory.
+BP_HealthItem is an item that adds a certain amount of health to the player when not at full health. Else it will add an health pack to the player inventory.
 
 __Simple Item__
 
-BP_SimpleItem is a generic item that can be used for any Inventory item (e.g. ammo).
+BP_SimpleItem is a generic item that can be used for any inventory item (e.g. ammo).
 
 __Weapon Item__
 
@@ -112,11 +133,11 @@ BP_BaseObject is the parent class of all objects. It handles the GetName functio
 
 __Exit__
 
-BP_Exit is used to travel between levels. It allows to set the player position and rotation in the level, and if not set, the PlayerStart is used.
+BP_Exit is used to travel between levels. By default the PlayerStart position and rotation is used but it allows to override these values.
 
 __Sliding Door__
 
-BP_SlidingDoor is used to travel between rooms. It can require a certain item, for example, key.
+BP_SlidingDoor is used to travel between rooms. It can require a certain item, for example, a key.
 
 __Terminal__
 
@@ -128,7 +149,7 @@ BP_Barrel is an object that explodes when receiving a certain amount of damage.
 
 __Interactable Interface__
 
-I_InteractableObject defines an abstract way for the player to interact with an object.
+I_InteractableObject defines an abstract way for the player to interact with an interactable object.
 
 ### Player
 
@@ -146,15 +167,15 @@ BP_InteractionComponent allows the player to interaction with InteractableObject
 
 __Inventory Component__
 
-BP_InventoryComponent is an interactable container for the the player's items and weapons. Defines types, amounts and max amounts and ways to increment and decrement the amounts.
+BP_InventoryComponent is an container for the player items and weapons. Defines types, amounts and max amounts and ways to increment and decrement the amounts.
 
 __Item Component__
 
-BP_ItemComponent allows the player to use items via the Pause Menu Inventory.
+BP_ItemComponent allows the player to use items via the Inventory option in the Pause Menu.
 
 __Vision Component__
 
-BP_VisionComponent defines the player's current vision (what is in front of the player). It uses the GetName interface call to get the name of the object without casting.
+BP_VisionComponent defines the player's current vision (what is in front of the player). It uses the GetName interface call to get the name of the actor without casting.
 
 __Player Interface__
 
@@ -178,11 +199,12 @@ I_PlayerController is an abstract interface between the game logic (e.g. pause a
 
 __Base Weapon__
 
-BP_BaseWeapon is the parent class of each weapon. It handles the finding of a target and applying damage to it when the player request a burst. The weapon defines multiple properties: burst size, weapon range, damage and damage radius, fire delays, accuracy and more.
+BP_BaseWeapon is the parent class of each weapon. It handles the finding of a target and applying damage to it when the player request a burst.  
+The weapon defines multiple properties: burst size, weapon range, damage and damage radius, fire delays, accuracy and more.
 
 __Ammo Component__
 
-BP_AmmoComponent handles the ammo for the weapon. Defines the ammo per shot, ammo type and whether it weapon has unlimited ammo. The current ammo is checked when the player requests a fire.
+BP_AmmoComponent handles the ammo for the weapon. Defines the ammo per shot, ammo type and whether the weapon has unlimited ammo. The current ammo is checked when the player requests a fire.
 
 ### UI
 
@@ -190,7 +212,7 @@ All user interfaces support gamepad input. Whether to highlight the selected but
 
 __HUD__
 
-BP_HUD is the in-game user interface and shows the player the current health, armor, ammo, turn, vision and log entries.  
+BP_HUD is the in-game user interface and shows the current health, armor, ammo, turn, vision and log entries.  
 It also defines the game over screen with the load game option and option to return to the main menu.  
 The pause menu user interface is also integrated in the HUD and allows the player to continue the game, use items in the inventory, save and load the game or return to the main menu.    
 
@@ -200,4 +222,4 @@ BP_MainMenu is the main menu user interface and allows the player to start the g
 
 __InventoryItemWidget__
 
-BP_InventoryItemWidget is a visual representation of a inventory item in the HUD pause menu. It shows the amount per item and an button that is enabled when it can be used.
+BP_InventoryItemWidget is a visual representation of an inventory item in the HUD pause menu. It shows the amount per item and a button that is enabled when it can be used.
