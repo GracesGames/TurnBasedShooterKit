@@ -19,5 +19,5 @@ Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub is
 * 3D model example
 
 [mail]: mailto:gracesgamesbv@gmail.com
-[discord]: https://discord.gg/DBwFAES
+[discord]: https://discord.gg/CdBFgFzH
 [github-issue]: https://github.com/GracesGames/BlockBreaker2DKit/issues
