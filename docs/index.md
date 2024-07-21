@@ -6,7 +6,7 @@ layout: default
 
 <iframe src="https://widgets.gamejolt.com/package/v1?key=A4xbUmY9&theme=light" frameborder="0" width="100%" height="170"></iframe>  
 <br/>
-Available in the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/turn-based-shooter-kit)
+Available in the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/turn-based-shooter-kit){:target="_blank"}{:rel="noreferrer"}
 
 The Turn Based Shooter Kit is an easy to use template for creating first-person turn-based shooter type of games!
 While the kit uses sprite visuals and a shooter setting, the logic can easily be applied to 3D models and a fantasy setting.
