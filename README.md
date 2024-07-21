@@ -1,4 +1,4 @@
-# Turn Based Shooter Kit for Unreal Engine 4
+# Turn Based Shooter Kit for Unreal Engine
 
 <p align="center">
 	<a href="https://www.unrealengine.com/marketplace/turn-based-shooter-kit" rel="noreferrer" target="_blank">Marketplace</a> |
