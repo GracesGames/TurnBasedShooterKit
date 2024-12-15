@@ -1,12 +1,12 @@
 # Turn Based Shooter Kit for Unreal Engine
 
 <p align="center">
-	<a href="https://www.unrealengine.com/marketplace/turn-based-shooter-kit" rel="noreferrer" target="_blank">Marketplace</a> |
+	<a href="https://www.fab.com/listings/84cf0cc1-522a-4033-a090-d4196b8c199a" rel="noreferrer" target="_blank">Fab</a> |
 	<a href="https://gamejolt.com/games/turn-based-shooter-kit/685034" rel="noreferrer" target="_blank">Demo</a> |
   	<a href="https://gracesgames.com/TurnBasedShooterKit/" rel="noreferrer" target="_blank">Website</a>
 </p>
 
-Available in the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/turn-based-shooter-kit)
+Available on [Fab](https://www.fab.com/listings/84cf0cc1-522a-4033-a090-d4196b8c199a)
 
 The Turn Based Shooter Kit is an easy to use template for creating first person turn based shooter type of games!
  
